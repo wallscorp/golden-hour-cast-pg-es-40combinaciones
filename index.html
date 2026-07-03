@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>40 Combinaciones Listas de Insecto y Mosca para Identificación Rápida</title>
+<meta name="description" content="Identifica en segundos qué insecto hay en el agua y qué mosca artificial usar. 40 combinaciones listas para usar. Descarga inmediata.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --verde-oscuro:#0d2b2b;
+    --verde-medio:#12403c;
+    --dorado:#e0a93f;
+    --dorado-claro:#f2c56b;
+    --crema:#faf7f0;
+    --blanco:#ffffff;
+    --texto:#22302e;
+    --texto-suave:#5c6b68;
+    --rojo:#c94f3d;
+    --radio:16px;
+    --sombra:0 8px 30px rgba(13,43,43,.10);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{
+    font-family:'Inter',system-ui,-apple-system,sans-serif;
+    color:var(--texto);
+    background:var(--crema);
+    line-height:1.55;
+    font-size:16px;
+  }
+  img{max-width:100%;display:block}
+  .container{width:100%;max-width:960px;margin:0 auto;padding:0 20px}
+  section{padding:52px 0}
+  h1,h2,h3{line-height:1.2;font-weight:800}
+  h2{font-size:clamp(1.45rem,4.5vw,2.1rem);text-align:center;margin-bottom:10px}
+  .sub-seccion{text-align:center;color:var(--texto-suave);max-width:560px;margin:0 auto 32px;font-size:1rem}
+
+  /* ===== Barra de escasez (cronómetro discreto) ===== */
+  .barra-escasez{
+    position:sticky;top:0;z-index:50;
+    background:var(--rojo);
+    color:var(--blanco);
+    text-align:center;
+    padding:10px 14px;
+    font-size:.84rem;
+    font-weight:700;
+    letter-spacing:.02em;
+    box-shadow:0 2px 10px rgba(201,79,61,.4);
+  }
+  .barra-escasez .tiempo{
+    display:inline-block;
+    background:rgba(255,255,255,.18);
+    border-radius:6px;
+    padding:1px 8px;
+    color:#fff;
+    font-variant-numeric:tabular-nums;
+    font-weight:800;
+  }
+
+  /* ===== 1. Hero ===== */
+  .hero{
+    background:linear-gradient(180deg,var(--verde-oscuro) 0%,var(--verde-medio) 100%);
+    color:var(--blanco);
+    padding:48px 0 56px;
+    text-align:center;
+  }
+  .hero .etiqueta{
+    display:inline-block;
+    background:rgba(224,169,63,.15);
+    border:1px solid rgba(224,169,63,.45);
+    color:var(--dorado-claro);
+    font-size:.75rem;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:.08em;
+    padding:6px 14px;
+    border-radius:100px;
+    margin-bottom:18px;
+  }
+  .hero h1{
+    font-size:clamp(1.7rem,6vw,2.7rem);
+    margin-bottom:14px;
+  }
+  .hero h1 .dorado{color:var(--dorado)}
+  .hero .subtitulo{
+    font-size:clamp(1rem,3.5vw,1.2rem);
+    color:rgba(255,255,255,.85);
+    max-width:540px;
+    margin:0 auto 28px;
+    font-weight:400;
+  }
+  .hero-imagen{
+    max-width:640px;
+    margin:0 auto 30px;
+    border-radius:var(--radio);
+    overflow:hidden;
+    box-shadow:0 20px 50px rgba(0,0,0,.35);
+  }
+
+  /* ===== Botón CTA ===== */
+  .btn{
+    display:inline-block;
+    background:linear-gradient(180deg,var(--dorado-claro),var(--dorado));
+    color:var(--verde-oscuro);
+    font-family:inherit;
+    font-size:1.05rem;
+    font-weight:800;
+    text-decoration:none;
+    text-align:center;
+    padding:17px 34px;
+    border:none;
+    border-radius:100px;
+    cursor:pointer;
+    box-shadow:0 8px 24px rgba(224,169,63,.35);
+    transition:transform .15s ease,box-shadow .15s ease;
+    width:100%;
+    max-width:380px;
+  }
+  .btn:active{transform:scale(.97)}
+  .btn .btn-nota{
+    display:block;
+    font-size:.72rem;
+    font-weight:600;
+    opacity:.75;
+    margin-top:2px;
+  }
+
+  /* ===== 2. Lo que recibes + carrusel ===== */
+  .carrusel-wrap{position:relative;margin-bottom:36px}
+  .carrusel{
+    display:flex;
+    gap:14px;
+    overflow-x:auto;
+    scroll-snap-type:x mandatory;
+    -webkit-overflow-scrolling:touch;
+    padding:4px 4px 14px;
+    scrollbar-width:none;
+  }
+  .carrusel::-webkit-scrollbar{display:none}
+  .carrusel .slide{
+    flex:0 0 78%;
+    max-width:320px;
+    scroll-snap-align:center;
+    border-radius:var(--radio);
+    overflow:hidden;
+    box-shadow:var(--sombra);
+    background:var(--blanco);
+  }
+  @media(min-width:700px){
+    .carrusel .slide{flex:0 0 300px}
+  }
+  .flecha{
+    position:absolute;top:50%;transform:translateY(-50%);
+    width:42px;height:42px;
+    border-radius:50%;
+    border:none;
+    background:var(--verde-oscuro);
+    color:var(--dorado-claro);
+    font-size:1.5rem;
+    line-height:1;
+    display:flex;align-items:center;justify-content:center;
+    cursor:pointer;
+    z-index:2;
+    box-shadow:0 4px 14px rgba(0,0,0,.3);
+    opacity:.94;
+    padding-bottom:3px;
+  }
+  .flecha:active{transform:translateY(-50%) scale(.92)}
+  .flecha.prev{left:4px}
+  .flecha.next{right:4px}
+  .puntos{display:flex;justify-content:center;gap:8px;margin-top:4px}
+  .puntos span{
+    width:8px;height:8px;border-radius:50%;
+    background:#cfd8d5;transition:background .2s;
+  }
+  .puntos span.activo{background:var(--dorado)}
+
+  .lista-recibes{
+    display:grid;
+    gap:12px;
+    max-width:560px;
+    margin:0 auto;
+  }
+  .item-recibe{
+    display:flex;
+    align-items:flex-start;
+    gap:12px;
+    background:var(--blanco);
+    border-radius:14px;
+    padding:16px 18px;
+    box-shadow:var(--sombra);
+    font-size:.95rem;
+  }
+  .item-recibe .icono{
+    flex:0 0 auto;
+    width:34px;height:34px;
+    display:flex;align-items:center;justify-content:center;
+    background:rgba(224,169,63,.15);
+    border-radius:10px;
+    font-size:1.05rem;
+  }
+  .item-recibe strong{display:block;font-size:.98rem}
+  .item-recibe p{color:var(--texto-suave);font-size:.87rem;margin-top:2px}
+
+  /* ===== 3. Beneficios ===== */
+  .seccion-verde{background:var(--verde-oscuro);color:var(--blanco)}
+  .seccion-verde h2{color:var(--blanco)}
+  .seccion-verde .sub-seccion{color:rgba(255,255,255,.7)}
+  .beneficios{
+    display:grid;
+    gap:14px;
+    grid-template-columns:1fr;
+  }
+  @media(min-width:640px){.beneficios{grid-template-columns:1fr 1fr}}
+  .beneficio{
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.10);
+    border-radius:14px;
+    padding:20px;
+  }
+  .beneficio .emoji{font-size:1.5rem;margin-bottom:8px;display:block}
+  .beneficio h3{font-size:1.02rem;margin-bottom:6px;color:var(--dorado-claro)}
+  .beneficio p{font-size:.9rem;color:rgba(255,255,255,.78)}
+
+  /* ===== 4. Bonos ===== */
+  .bonos{display:grid;gap:16px;max-width:600px;margin:0 auto}
+  .bono{
+    display:flex;
+    gap:16px;
+    align-items:center;
+    background:var(--blanco);
+    border-radius:var(--radio);
+    padding:18px;
+    box-shadow:var(--sombra);
+    border:1px solid #ece5d6;
+  }
+  .bono-img{
+    flex:0 0 84px;
+    width:84px;height:84px;
+    border-radius:12px;
+    overflow:hidden;
+  }
+  .bono .tag{
+    display:inline-block;
+    background:var(--verde-oscuro);
+    color:var(--dorado-claro);
+    font-size:.66rem;
+    font-weight:700;
+    letter-spacing:.06em;
+    text-transform:uppercase;
+    padding:3px 10px;
+    border-radius:100px;
+    margin-bottom:5px;
+  }
+  .bono h3{font-size:.98rem;margin-bottom:3px}
+  .bono p{font-size:.85rem;color:var(--texto-suave)}
+  .bono .valor{font-size:.8rem;font-weight:700;color:var(--rojo);margin-top:4px;display:block}
+  .bono .valor s{color:var(--texto-suave);font-weight:500}
+
+  /* ===== Antes y después ===== */
+  .antes-despues{
+    display:grid;
+    gap:16px;
+    grid-template-columns:1fr;
+    max-width:760px;
+    margin:0 auto;
+  }
+  @media(min-width:640px){.antes-despues{grid-template-columns:1fr 1fr}}
+  .ad-col{
+    background:var(--blanco);
+    border-radius:var(--radio);
+    overflow:hidden;
+    box-shadow:var(--sombra);
+    border-top:5px solid var(--rojo);
+  }
+  .ad-col.despues{border-top-color:#3c8a5a}
+  .ad-col .ad-body{padding:18px 20px 22px}
+  .ad-col h3{
+    font-size:1.05rem;
+    margin-bottom:10px;
+  }
+  .ad-col.antes h3{color:var(--rojo)}
+  .ad-col.despues h3{color:#2e7248}
+  .ad-col ul{list-style:none}
+  .ad-col ul li{
+    font-size:.88rem;
+    color:var(--texto-suave);
+    padding:6px 0 6px 26px;
+    position:relative;
+  }
+  .ad-col.antes ul li::before{content:"✗";position:absolute;left:2px;color:var(--rojo);font-weight:800}
+  .ad-col.despues ul li::before{content:"✓";position:absolute;left:2px;color:#3c8a5a;font-weight:800}
+
+  /* ===== Para quién es ===== */
+  .para-quien{
+    display:grid;
+    gap:16px;
+    grid-template-columns:1fr;
+    max-width:760px;
+    margin:0 auto;
+  }
+  @media(min-width:640px){.para-quien{grid-template-columns:1fr 1fr}}
+  .pq-col{
+    border-radius:var(--radio);
+    padding:22px;
+  }
+  .pq-col.si{background:var(--blanco);box-shadow:var(--sombra);border:2px solid #3c8a5a}
+  .pq-col.no{background:#f4efe6;border:2px dashed #cfc4ab}
+  .pq-col h3{font-size:1.02rem;margin-bottom:12px}
+  .pq-col.si h3{color:#2e7248}
+  .pq-col.no h3{color:var(--texto-suave)}
+  .pq-col ul{list-style:none}
+  .pq-col ul li{
+    font-size:.88rem;
+    padding:6px 0 6px 26px;
+    position:relative;
+    color:var(--texto);
+  }
+  .pq-col.no ul li{color:var(--texto-suave)}
+  .pq-col.si ul li::before{content:"✓";position:absolute;left:2px;color:#3c8a5a;font-weight:800}
+  .pq-col.no ul li::before{content:"✗";position:absolute;left:2px;color:#b3a689;font-weight:800}
+
+  /* ===== Cómo acceder ===== */
+  .pasos{
+    display:grid;
+    gap:14px;
+    grid-template-columns:1fr;
+    max-width:760px;
+    margin:0 auto;
+  }
+  @media(min-width:640px){.pasos{grid-template-columns:repeat(3,1fr)}}
+  .paso{
+    background:var(--blanco);
+    border-radius:var(--radio);
+    padding:24px 20px;
+    text-align:center;
+    box-shadow:var(--sombra);
+  }
+  .paso .num{
+    width:44px;height:44px;
+    margin:0 auto 12px;
+    display:flex;align-items:center;justify-content:center;
+    background:var(--verde-oscuro);
+    color:var(--dorado-claro);
+    font-weight:800;
+    font-size:1.15rem;
+    border-radius:50%;
+  }
+  .paso h3{font-size:.98rem;margin-bottom:6px}
+  .paso p{font-size:.86rem;color:var(--texto-suave)}
+
+  /* ===== 5. Oferta ===== */
+  .oferta-img{
+    border-radius:12px;
+    overflow:hidden;
+    margin-bottom:18px;
+  }
+  .oferta{background:linear-gradient(180deg,var(--verde-medio),var(--verde-oscuro));color:var(--blanco)}
+  .tarjeta-oferta{
+    background:var(--blanco);
+    color:var(--texto);
+    border-radius:20px;
+    max-width:440px;
+    margin:0 auto;
+    padding:32px 26px;
+    text-align:center;
+    box-shadow:0 24px 60px rgba(0,0,0,.35);
+  }
+  .tarjeta-oferta .nombre-producto{
+    font-size:1.05rem;
+    font-weight:800;
+    margin-bottom:16px;
+  }
+  .tarjeta-oferta ul{
+    list-style:none;
+    text-align:left;
+    margin:0 0 20px;
+    font-size:.9rem;
+  }
+  .tarjeta-oferta ul li{
+    padding:7px 0 7px 28px;
+    position:relative;
+    border-bottom:1px dashed #eee5d4;
+  }
+  .tarjeta-oferta ul li:last-child{border-bottom:none}
+  .tarjeta-oferta ul li::before{
+    content:"✓";
+    position:absolute;left:2px;
+    color:var(--dorado);
+    font-weight:800;
+  }
+  .precios{margin-bottom:6px}
+  .precio-antes{
+    font-size:1rem;
+    color:var(--texto-suave);
+    text-decoration:line-through;
+  }
+  .precio-ahora{
+    font-size:3rem;
+    font-weight:800;
+    color:var(--verde-oscuro);
+    line-height:1.1;
+  }
+  .precio-nota{font-size:.8rem;color:var(--texto-suave);margin-bottom:18px}
+  .mini-timer{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    background:#fdf3e3;
+    border:1px solid rgba(224,169,63,.5);
+    color:#8a6318;
+    font-size:.78rem;
+    font-weight:700;
+    padding:6px 14px;
+    border-radius:100px;
+    margin-bottom:18px;
+  }
+  .mini-timer .tiempo{font-variant-numeric:tabular-nums}
+  .seguro{
+    margin-top:14px;
+    font-size:.75rem;
+    color:var(--texto-suave);
+  }
+
+  /* ===== 7. Testimonios ===== */
+  .testimonios{display:grid;gap:16px;grid-template-columns:1fr}
+  @media(min-width:700px){.testimonios{grid-template-columns:repeat(3,1fr)}}
+  .testimonio{
+    background:var(--blanco);
+    border-radius:var(--radio);
+    padding:22px;
+    box-shadow:var(--sombra);
+  }
+  .testimonio .estrellas{color:var(--dorado);font-size:.9rem;letter-spacing:2px;margin-bottom:10px}
+  .testimonio p{font-size:.9rem;color:var(--texto);margin-bottom:14px}
+  .testimonio .persona{display:flex;align-items:center;gap:10px}
+  .testimonio .foto{
+    width:44px;height:44px;
+    border-radius:50%;
+    overflow:hidden;
+    flex:0 0 auto;
+  }
+  .testimonio .persona strong{font-size:.88rem;display:block}
+  .testimonio .persona span{font-size:.75rem;color:var(--texto-suave)}
+
+  /* ===== 8. Garantía ===== */
+  .garantia-caja{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:18px;
+    background:var(--blanco);
+    border:2px solid var(--dorado);
+    border-radius:20px;
+    padding:32px 24px;
+    max-width:600px;
+    margin:0 auto;
+    text-align:center;
+  }
+  .garantia-sello{
+    width:96px;height:96px;
+    border-radius:50%;
+    overflow:hidden;
+    flex:0 0 auto;
+  }
+  .garantia-caja h2{margin-bottom:0}
+  .garantia-caja p{font-size:.92rem;color:var(--texto-suave);max-width:440px}
+
+  /* ===== 9. FAQ ===== */
+  .faq{max-width:640px;margin:0 auto}
+  .faq details{
+    background:var(--blanco);
+    border-radius:14px;
+    margin-bottom:10px;
+    box-shadow:var(--sombra);
+    overflow:hidden;
+  }
+  .faq summary{
+    list-style:none;
+    cursor:pointer;
+    padding:18px 20px;
+    font-weight:700;
+    font-size:.95rem;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:12px;
+  }
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{
+    content:"+";
+    font-size:1.3rem;
+    font-weight:600;
+    color:var(--dorado);
+    transition:transform .2s;
+    flex:0 0 auto;
+  }
+  .faq details[open] summary::after{transform:rotate(45deg)}
+  .faq .respuesta{
+    padding:0 20px 18px;
+    font-size:.88rem;
+    color:var(--texto-suave);
+  }
+
+  /* ===== 10. Footer ===== */
+  footer{
+    background:var(--verde-oscuro);
+    color:rgba(255,255,255,.55);
+    text-align:center;
+    padding:28px 20px;
+    font-size:.78rem;
+  }
+
+  /* ===== Placeholder de imagen (se muestra si falta el archivo) ===== */
+  .ph{
+    background:repeating-linear-gradient(45deg,#e8e2d4,#e8e2d4 12px,#f1ecdf 12px,#f1ecdf 24px);
+    border:2px dashed #b9ad92;
+    color:#7d7460;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    font-size:.72rem;
+    font-weight:600;
+    padding:10px;
+    width:100%;
+    height:100%;
+    min-height:100%;
+  }
+  .hero-imagen .ph{aspect-ratio:4/3}
+  .slide .ph{aspect-ratio:3/4}
+  .bono-img .ph,.testimonio .foto .ph,.garantia-sello .ph{aspect-ratio:1/1;font-size:.58rem}
+
+  .cta-centro{text-align:center;margin-top:32px}
+</style>
+</head>
+<body>
+
+<!-- Barra de escasez con cronómetro discreto -->
+<div class="barra-escasez">
+  ⚡ Oferta por tiempo limitado — expira en <span class="tiempo" data-timer>15:00</span>
+</div>
+
+<!-- ===== 1. HERO ===== -->
+<header class="hero">
+  <div class="container">
+    <span class="etiqueta">Acceso inmediato · PDF digital</span>
+    <h1>40 Combinaciones Listas de <span class="dorado">Insecto y Mosca</span> para Identificación Rápida</h1>
+    <p class="subtitulo">Mira el insecto, encuentra tu mosca y lanza. Deja de perder horas de pesca adivinando qué atar a tu línea.</p>
+
+    <!-- IMAGEN: reemplazar por tu mockup → images/mockup-hero.jpg -->
+    <div class="hero-imagen">
+      <img src="images/mockup-hero.jpg" alt="40 Combinaciones Listas de Insecto y Mosca" data-ph="MOCKUP PRINCIPAL — images/mockup-hero.jpg">
+    </div>
+
+    <a href="#oferta" class="btn">QUIERO IDENTIFICAR EN SEGUNDOS
+      <span class="btn-nota">Descarga inmediata por solo $4 USD</span>
+    </a>
+  </div>
+</header>
+
+<!-- ===== 2. LO QUE RECIBES ===== -->
+<section id="recibes">
+  <div class="container">
+    <h2>Esto es lo que recibes al instante</h2>
+    <p class="sub-seccion">40 pares de insecto real + mosca artificial exacta, en láminas visuales listas para usar en el río o imprimir.</p>
+
+    <!-- CARRUSEL: reemplazar por las fotos del producto → images/producto-1.jpg ... producto-5.jpg -->
+    <div class="carrusel-wrap">
+      <button class="flecha prev" data-dir="-1" aria-label="Anterior" type="button">‹</button>
+      <button class="flecha next" data-dir="1" aria-label="Siguiente" type="button">›</button>
+      <div class="carrusel" data-carrusel>
+        <div class="slide"><img src="images/producto-1.jpg" alt="Lámina de ejemplo 1" loading="lazy" data-ph="FOTO PRODUCTO 1"></div>
+        <div class="slide"><img src="images/producto-2.jpg" alt="Lámina de ejemplo 2" loading="lazy" data-ph="FOTO PRODUCTO 2"></div>
+        <div class="slide"><img src="images/producto-3.jpg" alt="Lámina de ejemplo 3" loading="lazy" data-ph="FOTO PRODUCTO 3"></div>
+        <div class="slide"><img src="images/producto-4.jpg" alt="Lámina de ejemplo 4" loading="lazy" data-ph="FOTO PRODUCTO 4"></div>
+        <div class="slide"><img src="images/producto-5.jpg" alt="Lámina de ejemplo 5" loading="lazy" data-ph="FOTO PRODUCTO 5"></div>
+        <div class="slide"><img src="images/producto-6.jpg" alt="Lámina de ejemplo 6" loading="lazy" data-ph="FOTO PRODUCTO 6"></div>
+        <div class="slide"><img src="images/producto-7.jpg" alt="Lámina de ejemplo 7" loading="lazy" data-ph="FOTO PRODUCTO 7"></div>
+        <div class="slide"><img src="images/producto-8.jpg" alt="Lámina de ejemplo 8" loading="lazy" data-ph="FOTO PRODUCTO 8"></div>
+        <div class="slide"><img src="images/producto-9.jpg" alt="Lámina de ejemplo 9" loading="lazy" data-ph="FOTO PRODUCTO 9"></div>
+        <div class="slide"><img src="images/producto-10.jpg" alt="Lámina de ejemplo 10" loading="lazy" data-ph="FOTO PRODUCTO 10"></div>
+      </div>
+      <div class="puntos" data-puntos></div>
+    </div>
+
+    <div class="lista-recibes">
+      <div class="item-recibe">
+        <div class="icono">🎯</div>
+        <div><strong>40 combinaciones insecto → mosca</strong>
+        <p>Foto real del insecto junto a la mosca artificial exacta que lo imita. Ves uno, usas la otra.</p></div>
+      </div>
+      <div class="item-recibe">
+        <div class="icono">📏</div>
+        <div><strong>Tamaño de anzuelo recomendado</strong>
+        <p>Cada combinación incluye el número de anzuelo listo para elegir sin dudar (#12, #14, #16…).</p></div>
+      </div>
+      <div class="item-recibe">
+        <div class="icono">☀️</div>
+        <div><strong>Temporada y tipo de agua</strong>
+        <p>Íconos rápidos de estación y de río o lago, para filtrar de un vistazo lo que te sirve hoy.</p></div>
+      </div>
+      <div class="item-recibe">
+        <div class="icono">🖨️</div>
+        <div><strong>Formato PDF listo para imprimir</strong>
+        <p>Úsalo en tu teléfono o imprímelo y llévalo en el chaleco. Acceso de por vida, sin apps ni registros.</p></div>
+      </div>
+    </div>
+
+    <div class="cta-centro">
+      <a href="#oferta" class="btn">LO QUIERO POR $4 USD
+        <span class="btn-nota">Acceso inmediato tras el pago</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 3. POR QUÉ ELEGIRLO ===== -->
+<section class="seccion-verde">
+  <div class="container">
+    <h2>¿Por qué estas 40 combinaciones?</h2>
+    <p class="sub-seccion">Porque el tiempo en el agua es para pescar, no para dudar frente a tu caja de moscas.</p>
+    <div class="beneficios">
+      <div class="beneficio">
+        <span class="emoji">⏱️</span>
+        <h3>Identificas en segundos</h3>
+        <p>Ves el insecto en el agua, ubicas su lámina y ya sabes qué mosca atar. Sin búsquedas, sin adivinar.</p>
+      </div>
+      <div class="beneficio">
+        <span class="emoji">🐟</span>
+        <h3>Más picadas por salida</h3>
+        <p>Presentar la imitación correcta en el momento correcto es la diferencia entre volver con historias o con excusas.</p>
+      </div>
+      <div class="beneficio">
+        <span class="emoji">👁️</span>
+        <h3>100% visual, cero teoría</h3>
+        <p>Nada que memorizar. Solo comparas la foto del insecto con lo que tienes enfrente y usas la mosca indicada.</p>
+      </div>
+      <div class="beneficio">
+        <span class="emoji">🎒</span>
+        <h3>Siempre contigo</h3>
+        <p>En tu bolsillo, en tu teléfono o plastificado en el chaleco. Funciona sin internet, en cualquier río del mundo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ANTES Y DESPUÉS ===== -->
+<section id="transformacion">
+  <div class="container">
+    <h2>Tu pesca, antes y después</h2>
+    <p class="sub-seccion">La diferencia entre adivinar y saber exactamente qué atar a tu línea.</p>
+    <div class="antes-despues">
+
+      <div class="ad-col antes">
+        <img src="images/antes.jpg" alt="Antes: dudando frente a la caja de moscas" loading="lazy" data-ph="IMAGEN ANTES — images/antes.jpg">
+        <div class="ad-body">
+          <h3>Sin las combinaciones</h3>
+          <ul>
+            <li>Cambias de mosca 5 veces sin saber por qué</li>
+            <li>Pierdes la hora dorada mirando tu caja</li>
+            <li>Ves peces subiendo y no sabes qué comen</li>
+            <li>Vuelves a casa con excusas, no con fotos</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="ad-col despues">
+        <img src="images/despues.jpg" alt="Después: trucha capturada con la mosca correcta" loading="lazy" data-ph="IMAGEN DESPUÉS — images/despues.jpg">
+        <div class="ad-body">
+          <h3>Con las combinaciones</h3>
+          <ul>
+            <li>Identificas el insecto en segundos</li>
+            <li>Atas la mosca correcta a la primera</li>
+            <li>Aprovechas cada minuto de actividad en el agua</li>
+            <li>Más picadas, más capturas, más historias</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== PARA QUIÉN ES ===== -->
+<section class="seccion-verde" id="para-quien">
+  <div class="container">
+    <h2>¿Es para ti?</h2>
+    <p class="sub-seccion">Seamos directos: esto no es para todo el mundo.</p>
+    <div class="para-quien">
+
+      <div class="pq-col si">
+        <h3>✓ Es para ti si…</h3>
+        <ul>
+          <li>Pescas con mosca (o estás empezando) y dudas frente a tu caja</li>
+          <li>Quieres saber qué mosca usar sin memorizar nada</li>
+          <li>Pescas truchas en ríos o lagos y tu tiempo en el agua es sagrado</li>
+          <li>Prefieres una solución visual y directa, lista para usar hoy</li>
+        </ul>
+      </div>
+
+      <div class="pq-col no">
+        <h3>✗ No es para ti si…</h3>
+        <ul>
+          <li>Buscas una mosca "mágica" que pesque sola, sin lanzar</li>
+          <li>Disfrutas pasar horas investigando entomología por tu cuenta</li>
+          <li>No pescas con mosca ni piensas empezar</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== 4. BONOS ===== -->
+<section id="bonos">
+  <div class="container">
+    <h2>Además, hoy te llevas 3 bonos gratis</h2>
+    <p class="sub-seccion">Incluidos sin costo extra con tu acceso de hoy.</p>
+    <div class="bonos">
+
+      <div class="bono">
+        <!-- IMAGEN: images/bono-1.jpg -->
+        <div class="bono-img"><img src="images/bono-1.jpg" alt="Bono 1" data-ph="BONO 1 — images/bono-1.jpg"></div>
+        <div>
+          <span class="tag">Bono #1</span>
+          <h3>Selector de Mosca por Temporada</h3>
+          <p>Tabla rápida: mes del año → moscas que funcionan. La consultas antes de salir y llegas al agua con todo resuelto.</p>
+          <span class="valor">Valor: <s>$9</s> GRATIS hoy</span>
+        </div>
+      </div>
+
+      <div class="bono">
+        <!-- IMAGEN: images/bono-2.jpg -->
+        <div class="bono-img"><img src="images/bono-2.jpg" alt="Bono 2" data-ph="BONO 2 — images/bono-2.jpg"></div>
+        <div>
+          <span class="tag">Bono #2</span>
+          <h3>Checklist de las 15 Moscas Esenciales</h3>
+          <p>La lista exacta para armar una caja que cubre el 90% de las situaciones. Marcas lo que tienes y compras solo lo que falta.</p>
+          <span class="valor">Valor: <s>$7</s> GRATIS hoy</span>
+        </div>
+      </div>
+
+      <div class="bono">
+        <!-- IMAGEN: images/bono-3.jpg -->
+        <div class="bono-img"><img src="images/bono-3.jpg" alt="Bono 3" data-ph="BONO 3 — images/bono-3.jpg"></div>
+        <div>
+          <span class="tag">Bono #3</span>
+          <h3>Tarjetas de Bolsillo Imprimibles</h3>
+          <p>Las 40 combinaciones en formato mini tarjeta, listas para recortar, plastificar y llevar en el chaleco.</p>
+          <span class="valor">Valor: <s>$9</s> GRATIS hoy</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== 5. OFERTA ===== -->
+<section class="oferta" id="oferta">
+  <div class="container">
+    <h2 style="color:#fff">Consíguelo todo hoy</h2>
+    <p class="sub-seccion">Un solo pago. Acceso inmediato. Tuyo para siempre.</p>
+
+    <div class="tarjeta-oferta">
+      <div class="oferta-img">
+        <img src="images/mockup-oferta.jpg" alt="Todo lo que recibes hoy" data-ph="MOCKUP OFERTA — images/mockup-oferta.jpg">
+      </div>
+      <p class="nombre-producto">40 Combinaciones Listas de Insecto y Mosca para Identificación Rápida</p>
+      <ul>
+        <li>40 láminas insecto → mosca en PDF</li>
+        <li>Tamaños de anzuelo + temporada + tipo de agua</li>
+        <li>Bono #1: Selector de Mosca por Temporada</li>
+        <li>Bono #2: Checklist de las 15 Moscas Esenciales</li>
+        <li>Bono #3: Tarjetas de Bolsillo Imprimibles</li>
+        <li>Acceso de por vida + actualizaciones</li>
+      </ul>
+
+      <div class="precios">
+        <span class="precio-antes">Valor total: $29 USD</span><br>
+        <span class="precio-ahora">$4</span>
+      </div>
+      <p class="precio-nota">Pago único · Sin mensualidades</p>
+
+      <div class="mini-timer">🕐 El precio de hoy expira en <span class="tiempo" data-timer>15:00</span></div>
+
+      <!-- CHECKOUT: reemplazar # por el enlace de pago -->
+      <a href="#" class="btn">DESCARGAR AHORA POR $4 USD
+        <span class="btn-nota">Recibes todo en tu correo en menos de 1 minuto</span>
+      </a>
+
+      <p class="seguro">🔒 Pago 100% seguro · Garantía de 7 días</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CÓMO ACCEDER ===== -->
+<section id="acceso">
+  <div class="container">
+    <h2>Así de fácil lo recibes</h2>
+    <p class="sub-seccion">Nada que esperar, nada que configurar. En menos de 1 minuto ya lo estás usando.</p>
+    <div class="pasos">
+
+      <div class="paso">
+        <div class="num">1</div>
+        <h3>Haz tu pedido</h3>
+        <p>Haz clic en el botón, completa el pago seguro de $4 y listo. Tarjeta, y métodos locales disponibles.</p>
+      </div>
+
+      <div class="paso">
+        <div class="num">2</div>
+        <h3>Revisa tu correo</h3>
+        <p>Al instante recibes un email con tu enlace de descarga. Las 40 combinaciones y los 3 bonos, todo junto.</p>
+      </div>
+
+      <div class="paso">
+        <div class="num">3</div>
+        <h3>Ábrelo y úsalo</h3>
+        <p>Guárdalo en tu teléfono o imprímelo. En tu próxima salida ya identificas insecto y mosca en segundos.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== 7. TESTIMONIOS ===== -->
+<section id="testimonios">
+  <div class="container">
+    <h2>Pescadores que ya lo usan</h2>
+    <p class="sub-seccion">Esto dicen quienes lo llevaron al río.</p>
+    <div class="testimonios">
+
+      <div class="testimonio">
+        <div class="estrellas">★★★★★</div>
+        <p>"Lo imprimí, lo plastifiqué y lo llevo en el chaleco. El fin de semana vi unas efímeras pequeñas, busqué la lámina y en dos lances tenía una trucha. Antes hubiera cambiado de mosca cinco veces."</p>
+        <div class="persona">
+          <!-- IMAGEN: images/testimonio-1.jpg -->
+          <div class="foto"><img src="images/testimonio-1.jpg" alt="Foto de Martín" data-ph="FOTO"></div>
+          <div><strong>Martín Herrera</strong><span>Bariloche, Argentina</span></div>
+        </div>
+      </div>
+
+      <div class="testimonio">
+        <div class="estrellas">★★★★★</div>
+        <p>"Llevo dos años pescando con mosca y mi problema siempre fue el mismo: no saber qué imitar. Con esto lo resuelvo en el momento, directo desde el teléfono. Por $4 es un regalo."</p>
+        <div class="persona">
+          <!-- IMAGEN: images/testimonio-2.jpg -->
+          <div class="foto"><img src="images/testimonio-2.jpg" alt="Foto de Carlos" data-ph="FOTO"></div>
+          <div><strong>Carlos Mendoza</strong><span>Pucón, Chile</span></div>
+        </div>
+      </div>
+
+      <div class="testimonio">
+        <div class="estrellas">★★★★★</div>
+        <p>"Soy nuevo en esto y me abrumaba elegir mosca. Ahora solo comparo la foto con lo que veo en el agua y listo. Mi última salida fue la primera en la que saqué más truchas que mis amigos con años de experiencia."</p>
+        <div class="persona">
+          <!-- IMAGEN: images/testimonio-3.jpg -->
+          <div class="foto"><img src="images/testimonio-3.jpg" alt="Foto de Javier" data-ph="FOTO"></div>
+          <div><strong>Javier Fernández</strong><span>Asturias, España</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== 8. GARANTÍA ===== -->
+<section>
+  <div class="container">
+    <div class="garantia-caja">
+      <!-- IMAGEN: images/garantia.png (sello de garantía) -->
+      <div class="garantia-sello"><img src="images/garantia.png" alt="Garantía de 7 días" data-ph="SELLO GARANTÍA"></div>
+      <h2>Garantía incondicional de 7 días</h2>
+      <p>Descárgalo, imprímelo y llévalo a pescar. Si en los próximos 7 días sientes que no te sirve —por la razón que sea— escríbenos y te devolvemos tus $4 completos. Sin preguntas, sin formularios, sin vueltas. Todo el riesgo lo asumimos nosotros.</p>
+      <a href="#oferta" class="btn">PROBARLO SIN RIESGO POR $4</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 9. FAQ ===== -->
+<section id="faq" style="padding-top:0">
+  <div class="container">
+    <h2>Preguntas frecuentes</h2>
+    <p class="sub-seccion">Todo lo que necesitas saber antes de descargar.</p>
+    <div class="faq">
+
+      <details>
+        <summary>¿Cómo y cuándo recibo el material?</summary>
+        <p class="respuesta">Inmediatamente después del pago recibes un correo con el enlace de descarga del PDF con las 40 combinaciones y los 3 bonos. En menos de 1 minuto ya lo tienes en tu teléfono o computadora.</p>
+      </details>
+
+      <details>
+        <summary>¿Sirve si estoy empezando en la pesca con mosca?</summary>
+        <p class="respuesta">Sí, es ideal. No necesitas conocer nombres de insectos ni tener experiencia: solo comparas la foto del insecto con lo que ves en el agua y usas la mosca que aparece al lado. Es 100% visual.</p>
+      </details>
+
+      <details>
+        <summary>¿Funciona para los ríos y lagos de mi país?</summary>
+        <p class="respuesta">Sí. Las 40 combinaciones cubren las familias de insectos presentes en aguas de trucha de todo el mundo: efímeras, tricópteros, plecópteros, dípteros y terrestres. Además cada lámina indica el tipo de agua y la temporada.</p>
+      </details>
+
+      <details>
+        <summary>¿Necesito internet o alguna app para usarlo?</summary>
+        <p class="respuesta">No. Es un PDF que queda guardado en tu dispositivo y funciona sin señal, perfecto para ríos remotos. También puedes imprimirlo y llevarlo en el chaleco gracias al formato de bolsillo incluido.</p>
+      </details>
+
+      <details>
+        <summary>¿Qué pasa si no me convence?</summary>
+        <p class="respuesta">Tienes 7 días de garantía incondicional. Si no te sirve, nos escribes un correo y te devolvemos el 100% de tu dinero, sin preguntas. No hay riesgo para ti.</p>
+      </details>
+
+    </div>
+
+    <div class="cta-centro">
+      <a href="#oferta" class="btn">SÍ, LO QUIERO POR $4 USD
+        <span class="btn-nota">Descarga inmediata · Garantía de 7 días</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 10. FOOTER ===== -->
+<footer>
+  © 2026 Golden Hour Cast. Todos los derechos reservados.
+</footer>
+
+<script>
+  /* ===== Cronómetro de 15 minutos (persiste al recargar) ===== */
+  (function(){
+    var DURACION = 15 * 60; // 15 minutos en segundos
+    var fin = localStorage.getItem('ghc_oferta_fin');
+    var ahora = Math.floor(Date.now() / 1000);
+    if (!fin || parseInt(fin, 10) <= ahora) {
+      fin = ahora + DURACION;
+      localStorage.setItem('ghc_oferta_fin', fin);
+    }
+    fin = parseInt(fin, 10);
+    var displays = document.querySelectorAll('[data-timer]');
+    function tick(){
+      var resta = fin - Math.floor(Date.now() / 1000);
+      if (resta <= 0) {
+        // Reinicia el ciclo para no mostrar 00:00 permanente
+        fin = Math.floor(Date.now() / 1000) + DURACION;
+        localStorage.setItem('ghc_oferta_fin', fin);
+        resta = DURACION;
+      }
+      var m = String(Math.floor(resta / 60)).padStart(2, '0');
+      var s = String(resta % 60).padStart(2, '0');
+      displays.forEach(function(d){ d.textContent = m + ':' + s; });
+    }
+    tick();
+    setInterval(tick, 1000);
+  })();
+
+  /* ===== Flechas del carrusel ===== */
+  document.querySelectorAll('.flecha').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var car = document.querySelector('[data-carrusel]');
+      var slides = car.querySelectorAll('.slide');
+      var paso = slides[0].offsetWidth + 14;
+      var idx = Math.round(car.scrollLeft / paso) + parseInt(btn.dataset.dir, 10);
+      idx = Math.max(0, Math.min(idx, slides.length - 1));
+      var destino = slides[idx].offsetLeft - (car.clientWidth - slides[idx].offsetWidth) / 2;
+      destino = Math.max(0, Math.min(destino, car.scrollWidth - car.clientWidth));
+      // Animación manual: el scroll suave nativo entra en conflicto con scroll-snap mandatory
+      var inicio = car.scrollLeft;
+      var delta = destino - inicio;
+      var t0 = null;
+      var DUR = 320;
+      car.style.scrollSnapType = 'none';
+      function frame(t){
+        if (!t0) t0 = t;
+        var p = Math.min((t - t0) / DUR, 1);
+        var ease = 1 - Math.pow(1 - p, 3);
+        car.scrollLeft = inicio + delta * ease;
+        if (p < 1) { requestAnimationFrame(frame); }
+        else { car.style.scrollSnapType = ''; }
+      }
+      requestAnimationFrame(frame);
+      // Garantía: si la pestaña está oculta y rAF no corre, fija la posición final
+      setTimeout(function(){
+        if (Math.abs(car.scrollLeft - destino) > 2) { car.scrollLeft = destino; }
+        car.style.scrollSnapType = '';
+      }, DUR + 120);
+    });
+  });
+
+  /* ===== Puntos del carrusel ===== */
+  (function(){
+    var car = document.querySelector('[data-carrusel]');
+    var cont = document.querySelector('[data-puntos]');
+    if (!car || !cont) return;
+    var slides = car.querySelectorAll('.slide');
+    slides.forEach(function(_, i){
+      var p = document.createElement('span');
+      if (i === 0) p.classList.add('activo');
+      cont.appendChild(p);
+    });
+    var puntos = cont.querySelectorAll('span');
+    car.addEventListener('scroll', function(){
+      var idx = Math.round(car.scrollLeft / (slides[0].offsetWidth + 14));
+      idx = Math.max(0, Math.min(idx, slides.length - 1));
+      puntos.forEach(function(p, i){ p.classList.toggle('activo', i === idx); });
+    }, {passive: true});
+  })();
+
+  /* ===== Placeholder automático para imágenes faltantes ===== */
+  document.querySelectorAll('img[data-ph]').forEach(function(img){
+    function swap(){
+      var ph = document.createElement('div');
+      ph.className = 'ph';
+      ph.textContent = img.getAttribute('data-ph');
+      img.replaceWith(ph);
+    }
+    if (img.complete && img.naturalWidth === 0) { swap(); }
+    else { img.addEventListener('error', swap); }
+  });
+</script>
+</body>
+</html>
