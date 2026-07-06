@@ -20,9 +20,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>40 Combinaciones Listas de Insecto y Mosca para Identificación Rápida</title>
 <meta name="description" content="Identifica en segundos qué insecto hay en el agua y qué mosca artificial usar. 40 combinaciones listas para usar. Descarga inmediata.">
+<!-- Preload de la imagen LCP (hero) -->
+<link rel="preload" as="image" href="images/mockup-hero.jpg" fetchpriority="high">
+<!-- Fuentes: carga asíncrona para no bloquear el render -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet"></noscript>
 <style>
   :root{
     --verde-oscuro:#0d2b2b;
@@ -46,7 +50,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     line-height:1.55;
     font-size:16px;
   }
-  img{max-width:100%;display:block}
+  img{max-width:100%;display:block;height:auto}
   .container{width:100%;max-width:960px;margin:0 auto;padding:0 20px}
   section{padding:52px 0}
   h1,h2,h3{line-height:1.2;font-weight:800}
@@ -572,7 +576,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <!-- IMAGEN: reemplazar por tu mockup → images/mockup-hero.jpg -->
     <div class="hero-imagen">
-      <img src="images/mockup-hero.jpg" alt="40 Combinaciones Listas de Insecto y Mosca" data-ph="MOCKUP PRINCIPAL — images/mockup-hero.jpg">
+      <img src="images/mockup-hero.jpg" width="900" height="675" fetchpriority="high" alt="40 Combinaciones Listas de Insecto y Mosca" data-ph="MOCKUP PRINCIPAL — images/mockup-hero.jpg">
     </div>
 
     <a href="#oferta" class="btn">QUIERO IDENTIFICAR EN SEGUNDOS
@@ -592,16 +596,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <button class="flecha prev" data-dir="-1" aria-label="Anterior" type="button">‹</button>
       <button class="flecha next" data-dir="1" aria-label="Siguiente" type="button">›</button>
       <div class="carrusel" data-carrusel>
-        <div class="slide"><img src="images/producto-1.jpg" alt="Lámina de ejemplo 1" loading="lazy" data-ph="FOTO PRODUCTO 1"></div>
-        <div class="slide"><img src="images/producto-2.jpg" alt="Lámina de ejemplo 2" loading="lazy" data-ph="FOTO PRODUCTO 2"></div>
-        <div class="slide"><img src="images/producto-3.jpg" alt="Lámina de ejemplo 3" loading="lazy" data-ph="FOTO PRODUCTO 3"></div>
-        <div class="slide"><img src="images/producto-4.jpg" alt="Lámina de ejemplo 4" loading="lazy" data-ph="FOTO PRODUCTO 4"></div>
-        <div class="slide"><img src="images/producto-5.jpg" alt="Lámina de ejemplo 5" loading="lazy" data-ph="FOTO PRODUCTO 5"></div>
-        <div class="slide"><img src="images/producto-6.jpg" alt="Lámina de ejemplo 6" loading="lazy" data-ph="FOTO PRODUCTO 6"></div>
-        <div class="slide"><img src="images/producto-7.jpg" alt="Lámina de ejemplo 7" loading="lazy" data-ph="FOTO PRODUCTO 7"></div>
-        <div class="slide"><img src="images/producto-8.jpg" alt="Lámina de ejemplo 8" loading="lazy" data-ph="FOTO PRODUCTO 8"></div>
-        <div class="slide"><img src="images/producto-9.jpg" alt="Lámina de ejemplo 9" loading="lazy" data-ph="FOTO PRODUCTO 9"></div>
-        <div class="slide"><img src="images/producto-10.jpg" alt="Lámina de ejemplo 10" loading="lazy" data-ph="FOTO PRODUCTO 10"></div>
+        <div class="slide"><img src="images/producto-1.jpg" width="640" height="960" alt="Lámina de ejemplo 1" loading="lazy" data-ph="FOTO PRODUCTO 1"></div>
+        <div class="slide"><img src="images/producto-2.jpg" width="640" height="960" alt="Lámina de ejemplo 2" loading="lazy" data-ph="FOTO PRODUCTO 2"></div>
+        <div class="slide"><img src="images/producto-3.jpg" width="640" height="960" alt="Lámina de ejemplo 3" loading="lazy" data-ph="FOTO PRODUCTO 3"></div>
+        <div class="slide"><img src="images/producto-4.jpg" width="640" height="960" alt="Lámina de ejemplo 4" loading="lazy" data-ph="FOTO PRODUCTO 4"></div>
+        <div class="slide"><img src="images/producto-5.jpg" width="640" height="960" alt="Lámina de ejemplo 5" loading="lazy" data-ph="FOTO PRODUCTO 5"></div>
+        <div class="slide"><img src="images/producto-6.jpg" width="640" height="960" alt="Lámina de ejemplo 6" loading="lazy" data-ph="FOTO PRODUCTO 6"></div>
+        <div class="slide"><img src="images/producto-7.jpg" width="640" height="960" alt="Lámina de ejemplo 7" loading="lazy" data-ph="FOTO PRODUCTO 7"></div>
+        <div class="slide"><img src="images/producto-8.jpg" width="640" height="960" alt="Lámina de ejemplo 8" loading="lazy" data-ph="FOTO PRODUCTO 8"></div>
+        <div class="slide"><img src="images/producto-9.jpg" width="640" height="960" alt="Lámina de ejemplo 9" loading="lazy" data-ph="FOTO PRODUCTO 9"></div>
+        <div class="slide"><img src="images/producto-10.jpg" width="640" height="960" alt="Lámina de ejemplo 10" loading="lazy" data-ph="FOTO PRODUCTO 10"></div>
       </div>
       <div class="puntos" data-puntos></div>
     </div>
@@ -675,7 +679,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="antes-despues">
 
       <div class="ad-col antes">
-        <img src="images/antes.jpg" alt="Antes: dudando frente a la caja de moscas" loading="lazy" data-ph="IMAGEN ANTES — images/antes.jpg">
+        <img src="images/antes.jpg" width="700" height="700" alt="Antes: dudando frente a la caja de moscas" loading="lazy" data-ph="IMAGEN ANTES — images/antes.jpg">
         <div class="ad-body">
           <h3>Sin las combinaciones</h3>
           <ul>
@@ -688,7 +692,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
 
       <div class="ad-col despues">
-        <img src="images/despues.jpg" alt="Después: trucha capturada con la mosca correcta" loading="lazy" data-ph="IMAGEN DESPUÉS — images/despues.jpg">
+        <img src="images/despues.jpg" width="700" height="700" alt="Después: trucha capturada con la mosca correcta" loading="lazy" data-ph="IMAGEN DESPUÉS — images/despues.jpg">
         <div class="ad-body">
           <h3>Con las combinaciones</h3>
           <ul>
@@ -743,7 +747,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <div class="bono">
         <!-- IMAGEN: images/bono-1.jpg -->
-        <div class="bono-img"><img src="images/bono-1.jpg" alt="Bono 1" data-ph="BONO 1 — images/bono-1.jpg"></div>
+        <div class="bono-img"><img src="images/bono-1.jpg" width="256" height="256" loading="lazy" alt="Bono 1" data-ph="BONO 1 — images/bono-1.jpg"></div>
         <div>
           <span class="tag">Bono #1</span>
           <h3>Selector de Mosca por Temporada</h3>
@@ -754,7 +758,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <div class="bono">
         <!-- IMAGEN: images/bono-2.jpg -->
-        <div class="bono-img"><img src="images/bono-2.jpg" alt="Bono 2" data-ph="BONO 2 — images/bono-2.jpg"></div>
+        <div class="bono-img"><img src="images/bono-2.jpg" width="256" height="256" loading="lazy" alt="Bono 2" data-ph="BONO 2 — images/bono-2.jpg"></div>
         <div>
           <span class="tag">Bono #2</span>
           <h3>Checklist de las 15 Moscas Esenciales</h3>
@@ -765,7 +769,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <div class="bono">
         <!-- IMAGEN: images/bono-3.jpg -->
-        <div class="bono-img"><img src="images/bono-3.jpg" alt="Bono 3" data-ph="BONO 3 — images/bono-3.jpg"></div>
+        <div class="bono-img"><img src="images/bono-3.jpg" width="256" height="256" loading="lazy" alt="Bono 3" data-ph="BONO 3 — images/bono-3.jpg"></div>
         <div>
           <span class="tag">Bono #3</span>
           <h3>Tarjetas de Bolsillo Imprimibles</h3>
@@ -786,7 +790,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div class="tarjeta-oferta">
       <div class="oferta-img">
-        <img src="images/mockup-oferta.jpg" alt="Todo lo que recibes hoy" data-ph="MOCKUP OFERTA — images/mockup-oferta.jpg">
+        <img src="images/mockup-oferta.jpg" width="800" height="800" loading="lazy" alt="Todo lo que recibes hoy" data-ph="MOCKUP OFERTA — images/mockup-oferta.jpg">
       </div>
       <p class="nombre-producto">40 Combinaciones Listas de Insecto y Mosca para Identificación Rápida</p>
       <ul>
@@ -857,7 +861,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p>"Lo imprimí, lo plastifiqué y lo llevo en el chaleco. El fin de semana vi unas efímeras pequeñas, busqué la lámina y en dos lances tenía una trucha. Antes hubiera cambiado de mosca cinco veces."</p>
         <div class="persona">
           <!-- IMAGEN: images/testimonio-1.jpg -->
-          <div class="foto"><img src="images/testimonio-1.jpg" alt="Foto de Martín" data-ph="FOTO"></div>
+          <div class="foto"><img src="images/testimonio-1.jpg" width="200" height="200" loading="lazy" alt="Foto de Martín" data-ph="FOTO"></div>
           <div><strong>Martín Herrera</strong><span>Bariloche, Argentina</span></div>
         </div>
       </div>
@@ -867,7 +871,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p>"Llevo dos años pescando con mosca y mi problema siempre fue el mismo: no saber qué imitar. Con esto lo resuelvo en el momento, directo desde el teléfono. Por $4 es un regalo."</p>
         <div class="persona">
           <!-- IMAGEN: images/testimonio-2.jpg -->
-          <div class="foto"><img src="images/testimonio-2.jpg" alt="Foto de Carlos" data-ph="FOTO"></div>
+          <div class="foto"><img src="images/testimonio-2.jpg" width="200" height="200" loading="lazy" alt="Foto de Carlos" data-ph="FOTO"></div>
           <div><strong>Carlos Mendoza</strong><span>Pucón, Chile</span></div>
         </div>
       </div>
@@ -877,7 +881,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p>"Soy nuevo en esto y me abrumaba elegir mosca. Ahora solo comparo la foto con lo que veo en el agua y listo. Mi última salida fue la primera en la que saqué más truchas que mis amigos con años de experiencia."</p>
         <div class="persona">
           <!-- IMAGEN: images/testimonio-3.jpg -->
-          <div class="foto"><img src="images/testimonio-3.jpg" alt="Foto de Javier" data-ph="FOTO"></div>
+          <div class="foto"><img src="images/testimonio-3.jpg" width="200" height="200" loading="lazy" alt="Foto de Javier" data-ph="FOTO"></div>
           <div><strong>Javier Fernández</strong><span>Asturias, España</span></div>
         </div>
       </div>
@@ -891,7 +895,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container">
     <div class="garantia-caja">
       <!-- IMAGEN: images/garantia.png (sello de garantía) -->
-      <div class="garantia-sello"><img src="images/garantia.png" alt="Garantía de 7 días" data-ph="SELLO GARANTÍA"></div>
+      <div class="garantia-sello"><img src="images/garantia.jpg" width="240" height="240" loading="lazy" alt="Garantía de 7 días" data-ph="SELLO GARANTÍA"></div>
       <h2>Garantía incondicional de 7 días</h2>
       <p>Descárgalo, imprímelo y llévalo a pescar. Si en los próximos 7 días sientes que no te sirve —por la razón que sea— escríbenos y te devolvemos tus $4 completos. Sin preguntas, sin formularios, sin vueltas. Todo el riesgo lo asumimos nosotros.</p>
       <a href="#oferta" class="btn">PROBARLO SIN RIESGO POR $4</a>
